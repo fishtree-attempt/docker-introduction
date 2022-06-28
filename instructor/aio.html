@@ -100,9 +100,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-<li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li>
-          </ul>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul>
 </li>
       </ul>
 </div>
@@ -307,14 +305,23 @@
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
                     <ul>
-<li><a href="profiles.html">Learner Profiles</a></li>
+<li>
+                        <a href="../instructor/key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/instructor-notes.html">Instructor Notes</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/images.html">Extract All Images</a>
+                      </li>
+                      
                     </ul>
 </div>
                 </div>
               </div>
             </div>
-
-            <a href="../instructor/aio.html">See all in one page</a>
+            <hr class="half-width resources">
+<a href="../instructor/aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none">
 <div class="d-grid gap-1">
@@ -1513,7 +1520,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 </section><section id="exploring-container-image-versions"><h2 class="section-heading">Exploring Container Image Versions</h2>
 <hr class="half-width">
 <p>A single Docker Hub page can have many different versions of container images, based on the version of the software inside. These versions are indicated by “tags”. When referring to the specific version of a container image by its tag, you use a colon, <code>:</code>, like this:</p>
-<pre><code><span class="va">CONTAINER_IMAGE_NAME</span><span class="op">:</span><span class="va">TAG</span></code></pre>
+<pre><code><span><span class="va">CONTAINER_IMAGE_NAME</span><span class="op">:</span><span class="va">TAG</span></span></code></pre>
 <p>So if I wanted to download the <code>python</code> container image, with Python 3.8, I would use this name:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1529,7 +1536,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 <p>The default tag (which is used if you don’t specify one) is called <code>latest</code>.</p>
 <p>So far, we’ve only seen container images that are maintained by the Docker team. However, it’s equally common to use container images that have been produced by individual owners or organizations. Container images that you create and upload to Docker Hub would fall into this category, as would the container images maintained by organizations like <a href="https://hub.docker.com/u/continuumio" class="external-link">ContinuumIO</a> (the folks who develop the Anaconda Python environment) or community groups like <a href="https://hub.docker.com/u/rocker" class="external-link">rocker</a>, a group that builds community R container images.</p>
 <p>The name for these group- or individually-managed container images have this format:</p>
-<pre><code><span class="va">OWNER</span><span class="op">/</span><span class="va">CONTAINER_IMAGE_NAME</span><span class="op">:</span><span class="va">TAG</span></code></pre>
+<pre><code><span><span class="va">OWNER</span><span class="op">/</span><span class="va">CONTAINER_IMAGE_NAME</span><span class="op">:</span><span class="va">TAG</span></span></code></pre>
 <div id="callout2" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1538,7 +1545,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
 <h3 class="callout-title">Repositories</h3>
 <div class="callout-content">
 <p>The technical name for the contents of a Docker Hub page is a “repository.” The tag indicates the specific version of the container image that you’d like to use from a particular repository. So a slightly more accurate version of the above example is:</p>
-<pre><code><span class="va">OWNER</span><span class="op">/</span><span class="va">REPOSITORY</span><span class="op">:</span><span class="va">TAG</span></code></pre>
+<pre><code><span><span class="va">OWNER</span><span class="op">/</span><span class="va">REPOSITORY</span><span class="op">:</span><span class="va">TAG</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1561,7 +1568,7 @@ Deleted: sha256:af0b15c8625bb1938f1d7b17081031f649fd14e6b233688eea3c5483994a66a3
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>First, search for <code>rocker</code> in Docker Hub. Then look for their <code>tidyverse</code> container image. You can look at the list of tags, or just guess that the tag is <code>3.6.1</code>. Altogether, that means that the name of the container image we want to download is:</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -2106,7 +2113,7 @@ CMD ["python3", "--version"]</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>This script comes from <a href="https://wiki.python.org/moin/SimplePrograms" class="external-link">the Python Wiki</a> and is set to add all numbers that are passed to it as arguments.</p>
 </div>
@@ -2131,7 +2138,7 @@ CMD ["python3", "--version"]</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Here’s a breakdown of each piece of the command above</p>
 <ul>
@@ -2168,7 +2175,7 @@ CMD ["python3", "--version"]</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The docker command to run the container interactively is:</p>
 <div class="codewrapper sourceCode" id="cb8">
@@ -2241,7 +2248,7 @@ CMD ["python3", "--version"]</code></pre>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>You can start the container interactively like so:</p>
 <div class="codewrapper sourceCode" id="cb14">
@@ -2612,7 +2619,7 @@ Ask @mkuzak to make a PR to add extra for <https://github.com/escience-academy/d
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>This is not an exhaustive list but some of the advantages and disadvantages could be:</p>
 <div class="section level3">
@@ -2714,9 +2721,9 @@ Ask @mkuzak to make a PR to add extra for <https://github.com/escience-academy/d
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -2738,8 +2745,8 @@ Ask @mkuzak to make a PR to add extra for <https://github.com/escience-academy/d
   "url": "https://fishtree-attempt.github.io/docker-introduction/instructor/aio.html",
   "identifier": "https://fishtree-attempt.github.io/docker-introduction/instructor/aio.html",
   "dateCreated": "2022-05-31",
-  "dateModified": "2022-06-21",
-  "datePublished": "2022-06-21"
+  "dateModified": "2022-06-28",
+  "datePublished": "2022-06-28"
 }
 
   </script><script>
