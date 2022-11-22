@@ -19,6 +19,9 @@
     <loc>https://preview.carpentries.org/docker-introduction/advanced-containers.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/docker-introduction/aio.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/docker-introduction/creating-container-images.html</loc>
   </url>
   <url>
@@ -43,6 +46,9 @@
     <loc>https://preview.carpentries.org/docker-introduction/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/docker-introduction/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/docker-introduction/index.html</loc>
   </url>
   <url>
@@ -62,6 +68,9 @@
   </url>
   <url>
     <loc>https://preview.carpentries.org/docker-introduction/instructor/advanced-containers.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/docker-introduction/instructor/aio.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/docker-introduction/instructor/creating-container-images.html</loc>
@@ -88,10 +97,19 @@
     <loc>https://preview.carpentries.org/docker-introduction/instructor/guide.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/docker-introduction/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/docker-introduction/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/docker-introduction/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/docker-introduction/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/docker-introduction/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/docker-introduction/instructor/managing-containers.html</loc>
@@ -115,7 +133,13 @@
     <loc>https://preview.carpentries.org/docker-introduction/instructor/setup.html</loc>
   </url>
   <url>
+    <loc>https://preview.carpentries.org/docker-introduction/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://preview.carpentries.org/docker-introduction/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://preview.carpentries.org/docker-introduction/key-points.html</loc>
   </url>
   <url>
     <loc>https://preview.carpentries.org/docker-introduction/managing-containers.html</loc>
