@@ -396,12 +396,12 @@ package installer:</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/#</span> pip install cython</span></code></pre>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="exercise-searching-for-help" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-searching-for-help" class="callout-inner">
-<h3 class="callout-title">Exercise: Searching for Help<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise: Searching for Help<a class="anchor" aria-label="anchor" href="#exercise-searching-for-help"></a>
 </h3>
 <div class="callout-content">
 <p>Can you find instructions for installing R on Alpine Linux? Do they
@@ -481,14 +481,14 @@ elements are double-quoted (<code>"</code>) strings which are separated
 by commas. For example,
 <code>CMD ["ls", "-lF", "--color", "/etc"]</code> would translate to
 <code>ls -lF --color /etc</code>.</li>
-</ul><div id="callout1" class="callout callout">
+</ul><div id="shell-form-and-exec-form-for-cmd" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="shell-form-and-exec-form-for-cmd" class="callout-inner">
 <h3 class="callout-title">
 <em>shell-form</em> and <em>exec-form</em> for
-CMD<a class="anchor" aria-label="anchor" href="#callout1"></a>
+CMD<a class="anchor" aria-label="anchor" href="#shell-form-and-exec-form-for-cmd"></a>
 </h3>
 <div class="callout-content">
 <p>Another way to specify the parameter for the <a href="https://docs.docker.com/engine/reference/builder/#cmd" class="external-link"><code>CMD</code>
@@ -502,12 +502,12 @@ make sure complex commands are unambiguous in this format.</p>
 </div>
 </div>
 </div>
-<div id="challenge2" class="callout challenge">
+<div id="exercise-take-a-guess" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-take-a-guess" class="callout-inner">
-<h3 class="callout-title">Exercise: Take a Guess<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Exercise: Take a Guess<a class="anchor" aria-label="anchor" href="#exercise-take-a-guess"></a>
 </h3>
 <div class="callout-content">
 <p>Do you have any ideas about what we should use to fill in the sample
@@ -571,12 +571,12 @@ command:</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> docker image build <span class="at">-t</span> alice/alpine-python .</span></code></pre>
 </div>
-<div id="callout2" class="callout callout">
+<div id="build-context" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="build-context" class="callout-inner">
-<h3 class="callout-title">Build Context<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Build Context<a class="anchor" aria-label="anchor" href="#build-context"></a>
 </h3>
 <div class="callout-content">
 <p>Notice that the final input to <code>docker image build</code> isn’t
@@ -594,12 +594,12 @@ in a build context directory, as we’ve done in this example.</p>
 </div>
 </div>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="exercise-review" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-review" class="callout-inner">
-<h3 class="callout-title">Exercise: Review!<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Exercise: Review!<a class="anchor" aria-label="anchor" href="#exercise-review"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li><p>Think back to earlier. What command can you run to check if your
@@ -725,12 +725,12 @@ opposite of <code>docker image pull</code> –
 <p>In a web browser, open <a href="https://hub.docker.com" class="external-link">https://hub.docker.com</a>, and on your
 user page you should now see your container image listed, for anyone to
 use or build on.</p>
-<div id="callout3" class="callout callout">
+<div id="logging-in" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="logging-in" class="callout-inner">
-<h3 class="callout-title">Logging In<a class="anchor" aria-label="anchor" href="#callout3"></a>
+<h3 class="callout-title">Logging In<a class="anchor" aria-label="anchor" href="#logging-in"></a>
 </h3>
 <div class="callout-content">
 <p>Technically, you have to be logged into Docker on your computer for
@@ -811,7 +811,7 @@ images.</li>
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -835,7 +835,7 @@ images.</li>
   "identifier": "https://preview.carpentries.org/docker-introduction/instructor/creating-container-images.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>

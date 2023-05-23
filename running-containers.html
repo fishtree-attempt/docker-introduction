@@ -341,13 +341,13 @@ Docker container.</li>
 </div>
 </div>
 </div>
-<div id="callout1" class="callout callout">
+<div id="reminder-of-terminology-container-images-and-containers" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="reminder-of-terminology-container-images-and-containers" class="callout-inner">
 <h3 class="callout-title">Reminder of terminology: container images and
-containers<a class="anchor" aria-label="anchor" href="#callout1"></a>
+containers<a class="anchor" aria-label="anchor" href="#reminder-of-terminology-container-images-and-containers"></a>
 </h3>
 <div class="callout-content">
 <p>Recall that a <em>container image</em> is the template from which
@@ -389,12 +389,12 @@ Digest: sha256:f9dfddf63636d84ef479d645ab5885156ae030f611a56f3a7ac7f2fdd86d7e4e
 Status: Downloaded newer image for hello-world:latest
 docker.io/library/hello-world:latest</code></pre>
 </div>
-<div id="callout2" class="callout callout">
+<div id="docker-hub" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="docker-hub" class="callout-inner">
-<h3 class="callout-title">Docker Hub<a class="anchor" aria-label="anchor" href="#callout2"></a>
+<h3 class="callout-title">Docker Hub<a class="anchor" aria-label="anchor" href="#docker-hub"></a>
 </h3>
 <div class="callout-content">
 <p>Where did the <code>hello-world</code> container image come from? It
@@ -403,12 +403,12 @@ container images with other people. More on that in a later episode.</p>
 </div>
 </div>
 </div>
-<div id="challenge1" class="callout challenge">
+<div id="exercise-check-on-your-images" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="exercise-check-on-your-images" class="callout-inner">
-<h3 class="callout-title">Exercise: Check on Your Images<a class="anchor" aria-label="anchor" href="#challenge1"></a>
+<h3 class="callout-title">Exercise: Check on Your Images<a class="anchor" aria-label="anchor" href="#exercise-check-on-your-images"></a>
 </h3>
 <div class="callout-content">
 <p>What command would you use to see if the <code>hello-world</code>
@@ -424,7 +424,7 @@ computer? Give it a try before checking the solution.</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>To see if the <code>hello-world</code> container image is now on your
 computer, run:</p>
@@ -495,13 +495,13 @@ exits). The container image is still there, but nothing is actively
 running.</td>
 </tr></tbody></table><p>The <code>hello-world</code> container is set up to run an action by
 default – namely to print this message.</p>
-<div id="callout3" class="callout callout">
+<div id="using-docker-container-run-to-get-the-image" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="using-docker-container-run-to-get-the-image" class="callout-inner">
 <h3 class="callout-title">Using <code>docker container run</code> to get
-the image<a class="anchor" aria-label="anchor" href="#callout3"></a>
+the image<a class="anchor" aria-label="anchor" href="#using-docker-container-run-to-get-the-image"></a>
 </h3>
 <div class="callout-content">
 <p>We could have skipped the <code>docker image pull</code> step; if you
@@ -519,12 +519,12 @@ different Docker container image to explore what else we can do with the
 <code>docker container run</code> command. The suggestion above is to
 use <code>ubuntu</code>, but we’re going to run a different type of
 Linux, <code>alpine</code> instead because it’s quicker to download.</p>
-<div id="discussion1" class="callout discussion">
+<div id="run-the-alpine-docker-container" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="run-the-alpine-docker-container" class="callout-inner">
-<h3 class="callout-title">Run the Alpine Docker container<a class="anchor" aria-label="anchor" href="#discussion1"></a>
+<h3 class="callout-title">Run the Alpine Docker container<a class="anchor" aria-label="anchor" href="#run-the-alpine-docker-container"></a>
 </h3>
 <div class="callout-content">
 <p>Try downloading the <code>alpine</code> container image and using it
@@ -553,12 +553,12 @@ you to provide commands yourself. Try running this instead:</p>
 <p>You should see the output of the <code>cat /etc/os-release</code>
 command, which prints out the version of Alpine Linux that this
 container is using and a few additional bits of information.</p>
-<div id="challenge2" class="callout challenge">
+<div id="hello-world-part-2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="hello-world-part-2" class="callout-inner">
-<h3 class="callout-title">Hello World, Part 2<a class="anchor" aria-label="anchor" href="#challenge2"></a>
+<h3 class="callout-title">Hello World, Part 2<a class="anchor" aria-label="anchor" href="#hello-world-part-2"></a>
 </h3>
 <div class="callout-content">
 <p>Can you run a copy of the <code>alpine</code> container and make it
@@ -574,7 +574,7 @@ print a “hello world” message?</p>
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Use the same command as above, but with the <code>echo</code> command
 to print a message.</p>
@@ -606,12 +606,12 @@ command. The <code>alpine</code> Docker container image doesn’t include
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> docker container run <span class="at">-it</span> alpine sh</span></code></pre>
 </div>
-<div id="callout4" class="callout callout">
+<div id="technically" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="technically" class="callout-inner">
-<h3 class="callout-title">Technically…<a class="anchor" aria-label="anchor" href="#callout4"></a>
+<h3 class="callout-title">Technically…<a class="anchor" aria-label="anchor" href="#technically"></a>
 </h3>
 <div class="callout-content">
 <p>Technically, the interactive flag is just <code>-i</code> – the extra
@@ -644,12 +644,12 @@ computer. To finish using the container, type <code>exit</code>.</p>
 </h3>
 <pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/</span> <span class="co"># exit</span></span></code></pre>
 </div>
-<div id="challenge3" class="callout challenge">
+<div id="practice-makes-perfect" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="practice-makes-perfect" class="callout-inner">
-<h3 class="callout-title">Practice Makes Perfect<a class="anchor" aria-label="anchor" href="#challenge3"></a>
+<h3 class="callout-title">Practice Makes Perfect<a class="anchor" aria-label="anchor" href="#practice-makes-perfect"></a>
 </h3>
 <div class="callout-content">
 <p>Can you find out the version of Ubuntu installed on the
@@ -668,7 +668,7 @@ you more information.)</p>
   Solution 1 – Interactive
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Run an interactive busybox container – you can use
 <code>docker image pull</code> first, or just run it with this
@@ -708,7 +708,7 @@ command:</p>
   Solution 2 – Run commands
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Run a ubuntu container, first with a command to read out the Linux
 version:</p>
@@ -728,12 +728,12 @@ help:</p>
 </div>
 </div>
 </div>
-<div id="callout5" class="callout callout">
+<div id="even-more-options" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div id="even-more-options" class="callout-inner">
-<h3 class="callout-title">Even More Options<a class="anchor" aria-label="anchor" href="#callout5"></a>
+<h3 class="callout-title">Even More Options<a class="anchor" aria-label="anchor" href="#even-more-options"></a>
 </h3>
 <div class="callout-content">
 <p>There are many more options, besides <code>-it</code> that can be
@@ -815,7 +815,7 @@ action, or a shell to be used interactively.</li>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.11.16" class="external-link">sandpaper (0.11.16)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.12.0" class="external-link">sandpaper (0.12.0)</a>,
         <a href="https://github.com/carpentries/pegboard" class="external-link">pegboard (0.5.3)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.16" class="external-link">varnish (0.2.16)</a>.</p>
 			</div>
@@ -839,7 +839,7 @@ action, or a shell to be used interactively.</li>
   "identifier": "https://preview.carpentries.org/docker-introduction/running-containers.html",
   "dateCreated": "2022-11-15",
   "dateModified": "2022-11-15",
-  "datePublished": "2023-05-16"
+  "datePublished": "2023-05-23"
 }
 
   </script><script>
